@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=1280"/>
+
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+
+	<meta charset="UTF-8">
+	<title>Дельта-Системы</title>
+</head>
+<body>
+
+<div class="wrapper">
+	
+	<header>
+		<div class="container">
+			<div class="header-wrapper">
+				<div class="header-menu header-menu--full">
+					<div class="header-menu-logo">
+						<a class="header-menu-logo-link" href="index.html"><img src="img/logo.png" alt=""></a>
+						<a href="#">личный кабинет клиента</a>
+					</div>
+					<div class="header-menu-notification">
+						<span>
+							<span class="icon"></span>
+							<a class="email" href="mailto:user@gmail.com">user@gmail.com</a>
+						</span>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="#">Заказы</a></li><li><a href="#">Каталог запчастей</a></li><li><a href="#">Управление финансами</a></li><li><a href="#">Управление пользователями</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="main">
+		<div class="container">
+			<div class="block-notice js-block-notice">
+				<div class="block-notice-cross js-notice-cross"></div>
+				<div class="block-notice-all">
+					<a href="#">Все уведомления</a>
+				</div>
+				<div class="block-notice-item">
+					<div class="block-notice-date">
+						<span>16.02.2016</span>
+					</div>
+					<div class="block-notice-text">
+						<span>На ваш счет поступила сумма 10 000 руб.</span>
+						<a href="#">Показать историю операций</a>
+					</div>
+				</div>
+				<div class="block-notice-item">
+					<div class="block-notice-date">
+						<span>15.02.2016</span>
+					</div>
+					<div class="block-notice-text">
+						<span>Заказ №235235 завершен.</span>
+						<a href="#">Показать детали заказа</a>
+					</div>
+				</div>
+			</div>
+			<div class="dashbord-search">
+				<div class="block-dashboard-title">
+					<h2>Зафиксировать возврат запчасти</h2>
+				</div>
+				<form>
+					<div class="block-search-parts-group block-search-parts-group-select">
+						<select class="search">
+							<option value="Номер заказа">Номер заказа</option>
+							<option value="Название">Название</option>
+							<option value="Производитель">Производитель</option>
+						</select>
+						<input class="search" type="text" placeholder="Введите номер заказа">
+						<button class="search-button">Найти запчасть</button>
+					</div>
+				</form>
+			</div>
+			<div id="slider-dashboard" class="block-dashboard">
+				<div class="block-dashboard-title">
+					<h2 class="title-bottom">Новые заказы</h2>
+				</div>
+				<div class="block-search-parts">
+					<div class="block-parts-tabs">
+						<a href="#" class="active js-tab-click" data-item="0" data-name="#slider-dashboard">Аренда (5)</a><a href="#" class="js-tab-click" data-item="1" data-name="#slider-dashboard">Покупка (10)</a>
+					</div>
+				</div>
+				<div class="block-parts-item block-parts-item-slider js-tab-block active" data-item="0">
+					<div class="block-slider-dashboard-list">
+						<div class="block-slider-dashboard-item block-order-item">
+							<div class="block-slider-dashboard-item-left">
+								<p class="order-number">Заказ № 124214214</p>
+								<p class="order-date">Дата отправки заказа: 21.01.2015</p>
+								<div class="order-wrapper-part">
+									<span>Запчасть:</span>
+									<div class="order-part">
+										<a href="#">Материнская плата (5621000020)</a>
+										<p>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									</div>
+								</div>
+								<p class="order-title-document">Документы:</p>
+								<a href="#">Акт приема-передачи_20160225.docx</a>
+								<a href="#">Счет_20160225.docx</a>
+							</div>
+							<div class="block-slider-dashboard-item-right">
+								<p class="status">Ожидает подтверждения</p>
+								<p class="company">Компания:</p>
+								<p class="company-name">«СДМ-Банк» (ПАО)</p>
+								<p class="info">Срок аренды: 10 дней</p>
+								<p class="info">Способ доставки: самовывоз</p>
+								<div class="block-button-right">
+									<a href="#" class="btn btn-transparent btn--details">Детали заказа</a>
+									<a href="#" class="btn btn-blue btn--details">Принять в обработку</a>
+								</div>
+							</div>
+						</div>
+						<div class="block-slider-dashboard-item block-order-item">
+							<div class="block-slider-dashboard-item-left">
+								<p class="order-number">Заказ № 124214214</p>
+								<p class="order-date">Дата отправки заказа: 21.01.2015</p>
+								<div class="order-wrapper-part">
+									<span>Запчасть:</span>
+									<div class="order-part">
+										<a href="#">Материнская плата (5621000020)</a>
+										<p>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									</div>
+								</div>
+								<p class="order-title-document">Документы:</p>
+								<a href="#">Акт приема-передачи_20160225.docx</a>
+								<a href="#">Счет_20160225.docx</a>
+							</div>
+							<div class="block-slider-dashboard-item-right">
+								<p class="status">Ожидает подтверждения</p>
+								<p class="company">Компания:</p>
+								<p class="company-name">«СДМ-Банк» (ПАО)</p>
+								<p class="info">Срок аренды: 10 дней</p>
+								<p class="info">Способ доставки: самовывоз</p>
+								<div class="block-button-right">
+									<a href="#" class="btn btn-transparent btn--details">Детали заказа</a>
+									<a href="#" class="btn btn-blue btn--details">Принять в обработку</a>
+								</div>
+							</div>
+						</div>
+						<div class="block-slider-dashboard-item block-order-item">
+							<div class="block-slider-dashboard-item-left">
+								<p class="order-number">Заказ № 124214214</p>
+								<p class="order-date">Дата отправки заказа: 21.01.2015</p>
+								<div class="order-wrapper-part">
+									<span>Запчасть:</span>
+									<div class="order-part">
+										<a href="#">Материнская плата (5621000020)</a>
+										<p>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									</div>
+								</div>
+								<p class="order-title-document">Документы:</p>
+								<a href="#">Акт приема-передачи_20160225.docx</a>
+								<a href="#">Счет_20160225.docx</a>
+							</div>
+							<div class="block-slider-dashboard-item-right">
+								<p class="status">Ожидает подтверждения</p>
+								<p class="company">Компания:</p>
+								<p class="company-name">«СДМ-Банк» (ПАО)</p>
+								<p class="info">Срок аренды: 10 дней</p>
+								<p class="info">Способ доставки: самовывоз</p>
+								<div class="block-button-right">
+									<a href="#" class="btn btn-transparent btn--details">Детали заказа</a>
+									<a href="#" class="btn btn-blue btn--details">Принять в обработку</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="block-parts-item js-tab-block" data-item="1">
+					<div class="block-slider-dashboard-list">
+						<div class="block-slider-dashboard-item block-order-item">
+							<div class="block-slider-dashboard-item-left">
+								<p class="order-number">Заказ № 124214214</p>
+								<p class="order-date">Дата отправки заказа: 21.01.2015</p>
+								<div class="order-wrapper-part">
+									<span>Запчасть:</span>
+									<div class="order-part">
+										<a href="#">Материнская плата (5621000020)</a>
+										<p>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									</div>
+								</div>
+								<p class="order-title-document">Документы:</p>
+								<a href="#">Акт приема-передачи_20160225.docx</a>
+								<a href="#">Счет_20160225.docx</a>
+							</div>
+							<div class="block-slider-dashboard-item-right">
+								<p class="status">Ожидает подтверждения</p>
+								<p class="company">Компания:</p>
+								<p class="company-name">«СДМ-Банк» (ПАО)</p>
+								<p class="info">Срок аренды: 10 дней</p>
+								<p class="info">Способ доставки: самовывоз</p>
+								<div class="block-button-right">
+									<a href="#" class="btn btn-transparent btn--details">Детали заказа</a>
+									<a href="#" class="btn btn-blue btn--details">Принять в обработку</a>
+								</div>
+							</div>
+						</div>
+						<div class="block-slider-dashboard-item block-order-item">
+							<div class="block-slider-dashboard-item-left">
+								<p class="order-number">Заказ № 124214214</p>
+								<p class="order-date">Дата отправки заказа: 21.01.2015</p>
+								<div class="order-wrapper-part">
+									<span>Запчасть:</span>
+									<div class="order-part">
+										<a href="#">Материнская плата (5621000020)</a>
+										<p>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									</div>
+								</div>
+								<p class="order-title-document">Документы:</p>
+								<a href="#">Акт приема-передачи_20160225.docx</a>
+								<a href="#">Счет_20160225.docx</a>
+							</div>
+							<div class="block-slider-dashboard-item-right">
+								<p class="status">Ожидает подтверждения</p>
+								<p class="company">Компания:</p>
+								<p class="company-name">«СДМ-Банк» (ПАО)</p>
+								<p class="info">Срок аренды: 10 дней</p>
+								<p class="info">Способ доставки: самовывоз</p>
+								<div class="block-button-right">
+									<a href="#" class="btn btn-transparent btn--details">Детали заказа</a>
+									<a href="#" class="btn btn-blue btn--details">Принять в обработку</a>
+								</div>
+							</div>
+						</div>
+						<div class="block-slider-dashboard-item block-order-item">
+							<div class="block-slider-dashboard-item-left">
+								<p class="order-number">Заказ № 124214214</p>
+								<p class="order-date">Дата отправки заказа: 21.01.2015</p>
+								<div class="order-wrapper-part">
+									<span>Запчасть:</span>
+									<div class="order-part">
+										<a href="#">Материнская плата (5621000020)</a>
+										<p>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									</div>
+								</div>
+								<p class="order-title-document">Документы:</p>
+								<a href="#">Акт приема-передачи_20160225.docx</a>
+								<a href="#">Счет_20160225.docx</a>
+							</div>
+							<div class="block-slider-dashboard-item-right">
+								<p class="status">Ожидает подтверждения</p>
+								<p class="company">Компания:</p>
+								<p class="company-name">«СДМ-Банк» (ПАО)</p>
+								<p class="info">Срок аренды: 10 дней</p>
+								<p class="info">Способ доставки: самовывоз</p>
+								<div class="block-button-right">
+									<a href="#" class="btn btn-transparent btn--details">Детали заказа</a>
+									<a href="#" class="btn btn-blue btn--details">Принять в обработку</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="block-dashbord-button-center">
+					<a href="#" class="btn btn-transparent btn--details">Посмотреть все заказы</a>
+				</div>
+			</div>
+			<div id="block-dashboard-bottom" class="block-dashboard">
+				<div class="block-dashboard-title">
+					<h2 class="title-bottom">Заказы в обработке</h2>
+				</div>
+				<div class="block-search-parts">
+					<div class="block-parts-tabs">
+						<a href="#" class="active js-tab-click" data-item="0" data-name="#block-dashboard-bottom">Аренда (5)</a><a href="#" class="js-tab-click" data-item="1" data-name="#block-dashboard-bottom">Покупка (10)</a>
+					</div>
+				</div>
+				<div class="block-parts-item block-parts-item-slider js-tab-block active" data-item="0">
+					<div class="block-slider-dashboard-list">
+						<div class="block-slider-dashboard-item block-order-item">
+							<div class="block-slider-dashboard-item-left">
+								<p class="order-number">Заказ № 124214214</p>
+								<p class="order-date">Дата отправки заказа: 21.01.2015</p>
+								<div class="order-wrapper-part">
+									<span>Запчасть:</span>
+									<div class="order-part">
+										<a href="#">Материнская плата (5621000020)</a>
+										<p>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									</div>
+								</div>
+								<p class="order-title-document">Документы:</p>
+								<a href="#">Акт приема-передачи_20160225.docx</a>
+								<a href="#">Счет_20160225.docx</a>
+							</div>
+							<div class="block-slider-dashboard-item-right">
+								<p class="status">Ожидает подтверждения</p>
+								<p class="company">Компания:</p>
+								<p class="company-name">«СДМ-Банк» (ПАО)</p>
+								<p class="info">Срок аренды: 10 дней</p>
+								<p class="info">Способ доставки: самовывоз</p>
+								<div class="block-button-right">
+									<a href="#" class="btn btn-transparent btn--details">Детали заказа</a>
+									<a href="#" class="btn btn-blue btn--details">Принять в обработку</a>
+								</div>
+							</div>
+						</div>
+						<div class="block-slider-dashboard-item block-order-item">
+							<div class="block-slider-dashboard-item-left">
+								<p class="order-number">Заказ № 124214214</p>
+								<p class="order-date">Дата отправки заказа: 21.01.2015</p>
+								<div class="order-wrapper-part">
+									<span>Запчасть:</span>
+									<div class="order-part">
+										<a href="#">Материнская плата (5621000020)</a>
+										<p>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									</div>
+								</div>
+								<p class="order-title-document">Документы:</p>
+								<a href="#">Акт приема-передачи_20160225.docx</a>
+								<a href="#">Счет_20160225.docx</a>
+							</div>
+							<div class="block-slider-dashboard-item-right">
+								<p class="status">Ожидает подтверждения</p>
+								<p class="company">Компания:</p>
+								<p class="company-name">«СДМ-Банк» (ПАО)</p>
+								<p class="info">Срок аренды: 10 дней</p>
+								<p class="info">Способ доставки: самовывоз</p>
+								<div class="block-button-right">
+									<a href="#" class="btn btn-transparent btn--details">Детали заказа</a>
+									<a href="#" class="btn btn-blue btn--details">Принять в обработку</a>
+								</div>
+							</div>
+						</div>
+						<div class="block-slider-dashboard-item block-order-item">
+							<div class="block-slider-dashboard-item-left">
+								<p class="order-number">Заказ № 124214214</p>
+								<p class="order-date">Дата отправки заказа: 21.01.2015</p>
+								<div class="order-wrapper-part">
+									<span>Запчасть:</span>
+									<div class="order-part">
+										<a href="#">Материнская плата (5621000020)</a>
+										<p>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									</div>
+								</div>
+								<p class="order-title-document">Документы:</p>
+								<a href="#">Акт приема-передачи_20160225.docx</a>
+								<a href="#">Счет_20160225.docx</a>
+							</div>
+							<div class="block-slider-dashboard-item-right">
+								<p class="status">Ожидает подтверждения</p>
+								<p class="company">Компания:</p>
+								<p class="company-name">«СДМ-Банк» (ПАО)</p>
+								<p class="info">Срок аренды: 10 дней</p>
+								<p class="info">Способ доставки: самовывоз</p>
+								<div class="block-button-right">
+									<a href="#" class="btn btn-transparent btn--details">Детали заказа</a>
+									<a href="#" class="btn btn-blue btn--details">Принять в обработку</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="block-parts-item js-tab-block" data-item="1">
+					<div class="block-slider-dashboard-list">
+						<div class="block-slider-dashboard-item block-order-item">
+							<div class="block-slider-dashboard-item-left">
+								<p class="order-number">Заказ № 124214214</p>
+								<p class="order-date">Дата отправки заказа: 21.01.2015</p>
+								<div class="order-wrapper-part">
+									<span>Запчасть:</span>
+									<div class="order-part">
+										<a href="#">Материнская плата (5621000020)</a>
+										<p>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									</div>
+								</div>
+								<p class="order-title-document">Документы:</p>
+								<a href="#">Акт приема-передачи_20160225.docx</a>
+								<a href="#">Счет_20160225.docx</a>
+							</div>
+							<div class="block-slider-dashboard-item-right">
+								<p class="status">Ожидает подтверждения</p>
+								<p class="company">Компания:</p>
+								<p class="company-name">«СДМ-Банк» (ПАО)</p>
+								<p class="info">Срок аренды: 10 дней</p>
+								<p class="info">Способ доставки: самовывоз</p>
+								<div class="block-button-right">
+									<a href="#" class="btn btn-transparent btn--details">Детали заказа</a>
+									<a href="#" class="btn btn-blue btn--details">Принять в обработку</a>
+								</div>
+							</div>
+						</div>
+						<div class="block-slider-dashboard-item block-order-item">
+							<div class="block-slider-dashboard-item-left">
+								<p class="order-number">Заказ № 124214214</p>
+								<p class="order-date">Дата отправки заказа: 21.01.2015</p>
+								<div class="order-wrapper-part">
+									<span>Запчасть:</span>
+									<div class="order-part">
+										<a href="#">Материнская плата (5621000020)</a>
+										<p>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									</div>
+								</div>
+								<p class="order-title-document">Документы:</p>
+								<a href="#">Акт приема-передачи_20160225.docx</a>
+								<a href="#">Счет_20160225.docx</a>
+							</div>
+							<div class="block-slider-dashboard-item-right">
+								<p class="status">Ожидает подтверждения</p>
+								<p class="company">Компания:</p>
+								<p class="company-name">«СДМ-Банк» (ПАО)</p>
+								<p class="info">Срок аренды: 10 дней</p>
+								<p class="info">Способ доставки: самовывоз</p>
+								<div class="block-button-right">
+									<a href="#" class="btn btn-transparent btn--details">Детали заказа</a>
+									<a href="#" class="btn btn-blue btn--details">Принять в обработку</a>
+								</div>
+							</div>
+						</div>
+						<div class="block-slider-dashboard-item block-order-item">
+							<div class="block-slider-dashboard-item-left">
+								<p class="order-number">Заказ № 124214214</p>
+								<p class="order-date">Дата отправки заказа: 21.01.2015</p>
+								<div class="order-wrapper-part">
+									<span>Запчасть:</span>
+									<div class="order-part">
+										<a href="#">Материнская плата (5621000020)</a>
+										<p>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									</div>
+								</div>
+								<p class="order-title-document">Документы:</p>
+								<a href="#">Акт приема-передачи_20160225.docx</a>
+								<a href="#">Счет_20160225.docx</a>
+							</div>
+							<div class="block-slider-dashboard-item-right">
+								<p class="status">Ожидает подтверждения</p>
+								<p class="company">Компания:</p>
+								<p class="company-name">«СДМ-Банк» (ПАО)</p>
+								<p class="info">Срок аренды: 10 дней</p>
+								<p class="info">Способ доставки: самовывоз</p>
+								<div class="block-button-right">
+									<a href="#" class="btn btn-transparent btn--details">Детали заказа</a>
+									<a href="#" class="btn btn-blue btn--details">Принять в обработку</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="block-dashbord-button-center">
+					<a href="#" class="btn btn-transparent btn--details">Посмотреть все заказы</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+		<div class="footer-wrapper">
+			<ul class="footer-menu">
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Обратная связь</a></li>
+			</ul>
+			<div class="footer-phone">
+				<span>Бесплатный Call-центр: <a href="tel:88007003040">8 (800) 700 30 40</a></span>
+			</div>
+		</div>
+		<div class="footer-wrapper">
+			<div class="footer-copy">
+				<p>&#169; 2016 ЗАО НПП «Дельта-Системы»</p>
+				<p>Все права защищены</p>
+			</div>
+			<div class="footer-logo">
+				<a href="#">
+					Разработка сайта
+					<img src="img/footer-logo.png" alt="">
+				</a>
+			</div>
+		</div>
+		</div>
+	</footer>
+
+</div>
+
+
+<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="libs/jquery/jquery.formstyler.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

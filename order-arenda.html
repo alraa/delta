@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=1280"/>
+
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+
+	<meta charset="UTF-8">
+	<title>Дельта-Системы</title>
+</head>
+<body>
+
+<div class="wrapper">
+	<header>
+		<div class="container">
+			<div class="header-wrapper">
+				<div class="header-menu">
+					<div class="header-menu-logo">
+						<a class="header-menu-logo-link" href="index.html"><img src="img/logo.png" alt=""></a>
+						<a href="#">личный кабинет клиента</a>
+					</div>
+					<div class="header-menu-notification">
+						<span>
+							<span class="icon"></span>
+							<a class="email" href="mailto:user@gmail.com">user@gmail.com</a>
+						</span>
+						<span class="info">«СДМ-Банк» (ПАО)</span>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="#">Каталог аренды</a></li><li><a href="#">Каталог покупки</a></li><li><a href="#">Отложенные запчасти</a></li><li><a href="#">История заказов</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-resources">
+					<p>Доступные средства:</p>
+					<p class="resources">1 000 000 руб.</p>
+					<p class="block-resources">Заблокировано: 4 543 руб.</p>
+					<a href="#">История операций</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="main">
+
+		<div class="container">
+			<div class="container-right">
+				<div class="breadcrambs">
+					<ul>
+						<li><a href="#">Личный кабинет</a></li>
+						<li><a href="#">Каталог аренды запчастей</a></li>
+						<li class="active"><span>Оформление заказа</span></li>
+					</ul>
+				</div>
+				<div class="block-order-arenda">
+					<div class="block-order-arenda-title">
+						<h2 class="order-title order-title--padding">Оформление заказа аренды</h2>
+					</div>
+					<div class="block-order-arenda-wrapper">
+						<form class="js-form-inspection">
+							<div class="block-order-arenda-step">
+								<span class="step">1</span><span>Ваш заказ:</span>
+								<a class="link-order" href="#">Изменить заказ</a>
+							</div>
+							<div class="block-order-arenda-info">
+								<div class="block-order-arenda-info-top">
+									<div class="block-order-arenda-info-text">
+										<p class="block-order-article">Артикул: 5621000020</p>
+										<p class="bloc-order-title">Материнская плата</p>
+										<p class="block-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									</div>
+									<div class="block-order-arenda-info-price">
+										<p class="block-order-text-price-title order">Стоимость аренды: <b>4 000 руб/сутки</b></p>
+										<p class="block-order-text-price-title">Стоимость ремонта запчасти: <b>2 000 руб</b></p>
+										<p class="block-order-text-price-title all">Полная стоимость запчасти: <b>120 000 руб**</b></p>
+									</div>
+								</div>
+								<div class="block-order-arenda-info-bottom">
+									<div class="block-order-arenda-info-bottom-left">
+										<p class="title">Планируемое состояние возвращаемой запчасти:<span class="red">*</span></p>
+										<div class="checbox-group">
+											<input type="radio" class="order-radio" id="order-radio-1" name="order1" value="Неисправное" checked>
+											<label for="order-radio-1">Неисправное</label>
+										</div>
+										<div class="checbox-group">
+											<input type="radio" class="order-radio" id="order-radio-2" name="order1" value="Исправное">
+											<label for="order-radio-2">Исправное</label>
+										</div>
+									</div>
+									<div class="block-order-arenda-info-bottom-right">
+										<p class="title">Замена запчасти:<span class="red">*</span></p>
+										<div class="checbox-group">
+											<input type="radio" class="order-radio" id="order-radio-3" name="order2" value="Неисправное" checked>
+											<label for="order-radio-3">Самостоятельно</label>
+										</div>
+										<div class="checbox-group">
+											<input type="radio" class="order-radio" id="order-radio-4" name="order2" value="Исправное">
+											<label for="order-radio-4">Сервисной компанией</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<p class="info-price">** В случае просрочки возврата или возврата запчасти в неисправном состоянии или с Вас будет списана полная стоимость запчасти.</p>
+							<div class="block-order-arenda-step">
+								<span class="step">2</span><span>Срок аренды:<span class="red">*</span></span>
+							</div>
+							<div class="block-order-arenda-form">
+								<input type="text" class="order-number js-order-number" id="order-number" value="1">
+								<div class="block-arrow js-block-arrow">
+									<span class="block-arrow-top"></span>
+									<span class="block-arrow-bottom"></span>
+								</div>
+								<label for="order-number">дней</label>
+								<p class="order-info">Срок аренды начинается после получения товара на складе или  передачи товара логистической компании.</p>
+							</div>
+							<div class="block-order-arenda-step">
+								<span class="step">3</span><span>Способ доставки:<span class="red">*</span></span>
+							</div>
+							<div class="block-order-arenda-form">
+								<div class="checbox-group checbox-group--bottom">
+									<input type="radio" class="order-radio" id="order-radio-7" name="order3" value="Самовывоз" checked>
+									<label for="order-radio-7">Самовывоз со склада (г. Москва, ул. Сущевский вал, 9)</label>
+								</div>
+								<div class="checbox-group checbox-group--bottom">
+									<input type="radio" class="order-radio" id="order-radio-8" name="order3" value="Доставка">
+									<label for="order-radio-8">Доставка логистической компанией</label>
+								</div>
+									<p class="title">Укажите адрес доставки:*</p>
+								<div class="checbox-group checbox-group--bottom">
+									<input type="radio" class="order-radio" id="order-radio-9" name="order4" value="Волоколамское" checked>
+									<label class="radio-text" for="order-radio-9">г. Москва, Волоколамское ш., 73</label>
+								</div>
+								<div class="checbox-group checbox-group--bottom">
+									<input type="radio" class="order-radio" id="order-radio-10" name="order4" value="Варшавское">
+									<label class="radio-text" for="order-radio-10">г. Москва, Варшавское ш., 66</label>
+								</div>
+								<div class="checbox-group checbox-group--bottom">
+									<input type="radio" class="order-radio" id="order-radio-11" name="order4" value="Другой">
+									<label class="radio-text" for="order-radio-11">Другой адрес:</label>
+								</div>
+								<div class="input-group">
+									<label class="middle">Город<span class="red">*</span></label>
+									<div class="input-group-right">
+										<input type="text" class="error" placeholder="Обязательное поле">
+										<a href="#" class="list-city">Список городов доставки логистической компанией</a>
+									</div>
+								</div>
+								<div class="input-group">
+									<label class="middle">Адрес<span class="red">*</span></label>
+									<div class="input-group-right input-group-right--bottom">
+										<textarea class="address"></textarea>
+										<div class="block-checkbox">
+											<input id="entrance-checkbox-20" type="checkbox">
+											<label for="entrance-checkbox-20">
+												<span>Доставка до терминала логистической компании</span>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="checbox-group checbox-group--bottom">
+									<p class="title">Выберите логистическую компанию:<span class="red">*</span></p>
+									<input type="radio" class="order-radio" id="order-radio-12" name="order5" value="DHL">
+									<label class="radio-text" for="order-radio-12">DHL</label>
+									<p class="info">2 000 руб., срок доставки: 2 дня, адрес терминала: г. Москва, Сущевский вал, 9</p>
+									<input type="radio" class="order-radio" id="order-radio-13" name="order5" value="4side">
+									<label class="radio-text" for="order-radio-13">4side</label>
+									<p class="info">1 500 руб., срок доставки: 4 дня, адрес терминала: г. Москва, Сущевский вал, 9</p>
+									<input type="radio" class="order-radio" id="order-radio-14" name="order5" value="EMS">
+									<label class="radio-text" for="order-radio-14">EMS</label>
+									<p class="info">1 200 руб., срок доставки: 6 дней, адрес терминала: г. Москва, Сущевский вал, 9</p>
+								</div>
+							</div>
+							<div class="block-order-arenda-step">
+								<span class="step">4</span><span>Замена запчасти на месте установки банкомата:<span class="red">*</span></span>
+							</div>
+							<div class="block-order-arenda-form">
+								<div class="input-group">
+									<p class="title">Укажите банкомат для замены запчасти:<span class="red">*</span></p>
+									<label class="text">Серийный номер<span class="red">*</span></label>
+									<div class="input-group-right">
+										<input type="text" placeholder="Начните вводить серийный номер...">
+									</div>
+								</div>
+								<div class="input-group">
+									<label class="text middle">Город<span class="red">*</span></label>
+									<div class="input-group-right">
+										<input type="text" placeholder="Начните вводить город...">
+									</div>
+								</div>
+								<div class="input-group">
+									<label class="text">Название отделения<span class="red">*</span></label>
+									<div class="input-group-right">
+										<input type="text">
+									</div>
+								</div>
+								<div class="input-group">
+									<label class="text middle">Адрес<span class="red">*</span></label>
+									<div class="input-group-right input-group-right--bottom">
+										<textarea class="address"></textarea>
+									</div>
+								</div>
+								<div class="checbox-group--service">
+									<div class="checbox-group checbox-group--bottom">
+										<p class="title">Выберите сервисную компанию:<span class="red">*</span></p>
+										<input type="radio" class="order-radio" id="order-radio-16" name="order7" value="DHL">
+										<label class="radio-text" for="order-radio-16">DHL <span>- 2000 руб.</span></label>
+									</div>
+									<div class="checbox-group checbox-group--bottom">
+										<input type="radio" class="order-radio" id="order-radio-17" name="order7" value="4side">
+										<label class="radio-text" for="order-radio-17">4side <span>- 1500 руб.</span></label>
+									</div>
+									<div class="checbox-group checbox-group--bottom">
+										<input type="radio" class="order-radio" id="order-radio-18" name="order7" value="EMS">
+										<label class="radio-text" for="order-radio-18">EMS <span>- 1200 руб.</span></label>
+									</div>
+								</div>
+								<div class="input-group">
+									<label class="text middle">Дополнительная информация</label>
+									<div class="input-group-right">
+										<textarea></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="block-order-arenda-step block-order-arenda-step--five">
+								<span class="step">5</span><span>Получатель (контактное лицо):<span class="red">*</span></span>
+							</div>
+							<div class="block-order-arenda-form">
+								<div class="checbox-group--service">
+									<div class="checbox-group checbox-group--bottom">
+										<input type="radio" class="order-radio" id="order-radio-19" name="order8" value="Иванов Иван Иванович">
+										<label class="radio-text" for="order-radio-19">Иванов Иван Иванович</label>
+										<div class="inform-person">
+											<p class="position">менеджер</p>
+											<a class="phone" href="tel:+74954324323">+7 (495) 432-43-23</a>
+											<a class="mail" href="mailto:ivanov@gmail.com">ivanov@gmail.com</a>
+										</div>
+									</div>
+									<div class="checbox-group checbox-group--bottom">
+										<input type="radio" class="order-radio" id="order-radio-20" name="order8" value="Другое контактное лицо">
+										<label class="radio-text" for="order-radio-20">Другое контактное лицо</label>
+									</div>
+								</div>
+								<div class="input-group">
+									<label class="text middle">ФИО<span class="red">*</span></label>
+									<div class="input-group-right">
+										<input type="text">
+									</div>
+								</div>
+								<div class="input-group">
+									<label class="text middle">Должность<span class="red">*</span></label>
+									<div class="input-group-right">
+										<input type="text">
+									</div>
+								</div>
+								<div class="input-group">
+									<label class="text">Контактный телефон<span class="red">*</span></label>
+									<div class="input-group-right">
+										<input type="text">
+									</div>
+								</div>
+							</div>
+						</form>
+						<p class="bottom-info"><span class="red">*</span> — отмеченные поля обязательны для заполнения</p>
+					</div>
+				</div>
+			</div>
+			<div class="container-left">
+				<div class="block-right-price">
+					<div class="block-right-price-group">
+						<p><b>Стоимость аренды:</b></p>
+						<p>45 000 руб.</p>
+					</div>
+					<div class="block-right-price-group">
+						<p><b>Стоимость ремонта:</b></p>
+						<p>4 000 руб.</p>
+					</div>
+					<div class="block-right-price-group">
+						<p><b>Стоимость доставки:</b></p>
+						<p>4 543 руб.</p>
+					</div>
+					<div class="block-right-price-group">
+						<p><b>Стоимость замены запчасти:</b></p>
+						<p>2 000 руб.</p>
+					</div>
+					<div class="block-right-price-group">
+						<p><b>Итого:</b></p>
+						<p class="block-right-price-finish">55 543 руб.</p>
+					</div>
+					<p class="block-right-price-inform">После подтверждения заказа сотрудником «Дельта-системы» на вашем счете будет заблокирована сумма 47 000 руб. и списана стоимость доставки (4 543 руб.)</p>
+					<div class="block-catalog-button">
+						<a href="#" class="btn btn-blue js-form-inspection-btn">Отправить заказ</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		<div class="container">
+		<div class="footer-wrapper">
+			<ul class="footer-menu">
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Обратная связь</a></li>
+			</ul>
+			<div class="footer-phone">
+				<span>Бесплатный Call-центр: <a href="tel:88007003040">8 (800) 700 30 40</a></span>
+			</div>
+		</div>
+		<div class="footer-wrapper">
+			<div class="footer-copy">
+				<p>&#169; 2016 ЗАО НПП «Дельта-Системы»</p>
+				<p>Все права защищены</p>
+			</div>
+			<div class="footer-logo">
+				<a href="#">
+					Разработка сайта
+					<img src="img/footer-logo.png" alt="">
+				</a>
+			</div>
+		</div>
+		</div>
+	</footer>
+</div>
+
+
+<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="libs/jquery/jquery.formstyler.js"></script>
+<script src="libs/jquery-ui.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

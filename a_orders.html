@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+
+	<meta charset="UTF-8">
+	<title>Дельта-Системы</title>
+</head>
+<body>
+
+<div class="wrapper">
+	<header>
+		<div class="container">
+			<div class="header-wrapper">
+				<div class="header-menu">
+					<div class="header-menu-logo">
+						<a class="header-menu-logo-link" href="index.html"><img src="img/logo.png" alt=""></a>
+						<a href="#">личный кабинет клиента</a>
+					</div>
+					<div class="header-menu-notification">
+						<a href="#">
+							<span class="icon"></span>
+							<span class="email">user@gmail.com</span>
+						</a>
+						<span class="info">«СДМ-Банк» (ПАО)</span>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="#">Каталог аренды</a></li><li><a href="#">Каталог покупки</a></li><li><a href="#">Отложенные запчасти</a></li><li><a href="#">История заказов</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-resources">
+					<p>Доступные средства:</p>
+					<p class="resources">1 000 000 руб.</p>
+					<p class="block-resources">Заблокировано: 4 543 руб.</p>
+					<a href="#">История операций</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="main">
+
+		<div class="container">
+			
+				<div class="breadcrambs">
+					<ul>
+						<li><a href="#">Личный кабинет</a></li>
+						<li class="active"><a href="#">История заказов аренды</a></li>
+					</ul>
+				</div>
+				<div id="slider-profile" class="block-orders">
+					<div class="block-profile">
+						<h2>История заказов аренды</h2>
+					</div>
+					<div class="block-profile-parts">
+						<div class="block-profile-tabs">
+							<a href="#" class="active js-tab-click" data-item="0" data-name="#slider-profile">Действующие (4)</a><a href="#" class="js-tab-click" data-item="1" data-name="#slider-profile">Завершенные (23)</a><a href="#" class="js-tab-click" data-item="2" data-name="#slider-profile">Все заказы (27)</a>
+						</div>
+						<div class="block-parts-item js-tab-block active" data-item="0">
+							<div class="block-catalog-wrapper">
+								<form>
+									<a href="#" class="btn btn-right"><img src="img/ico20.png" alt=""/>Сохранить в Excel</a>
+									<div class="sm-search show">
+									<div class="block-search-parts-group">
+										<select class="search">
+											<option value="Артикул">Номер заказа</option>
+											<option value="Название">Номер заказа</option>
+											<option value="Производитель">Номер заказа</option>
+										</select>
+										<input class="search" type="text" value="346346346">
+										<button class="search-button">Найти заказы</button>
+									</div>
+									</div>
+									
+									<div class="big-search block-form">
+										<div class="block-search-parts-group">
+											<select class="search">
+												<option value="Артикул">Номер заказа</option>
+												<option value="Название">Номер заказа</option>
+												<option value="Производитель">Номер заказа</option>
+											</select>
+											<input class="search" type="text" value="346346346">
+											<a href="#" class="clear-form"></a>											
+										</div>
+										
+										<div class="input-group">
+											<label class="text">Дата начала аренды с </label>
+											<div class="input-group-right">
+												<input type="text" value="26.02.2016" class="date-inp">
+												<span class="beet">по</span>
+												<input type="text" value="26.02.2016" class="date-inp">
+											</div>
+											<a href="#" class="clear-form"></a>	
+										</div>
+										<div class="input-group">
+											<label class="text">Дата окончания аренды с </label>
+											<div class="input-group-right">
+												<input type="text" placeholder="__ __ ____" class="date-inp">
+												<span class="beet">по</span>
+												<input type="text" placeholder="__ __ ____" class="date-inp">
+											</div>
+										</div>
+										<div class="input-group">
+											<label class="text">Дата отправки заказа с </label>
+											<div class="input-group-right">
+												<input type="text" placeholder="__ __ ____" class="date-inp">
+												<span class="beet">по</span>
+												<input type="text" placeholder="__ __ ____" class="date-inp">
+											</div>
+										</div>
+										
+										<div class="input-group">
+											<label class="text">Сервисная компания</label>
+											<div class="input-group-right">
+												<select class="search"><option>Выберите сервисную компанию</option><option>Выберите сервисную компанию</option><option>Выберите сервисную компанию</option></select>
+											</div>
+										</div>
+										<div class="input-group">
+											<label class="text">Логистическая компания</label>
+											<div class="input-group-right">
+												<select class="search"><option>Выберите логистическую компанию</option><option>Выберите логистическую компанию</option><option>Выберите логистическую компанию</option></select>
+											</div>
+										</div>
+										<div class="input-group">
+											<label class="text">Статус</label>
+											<div class="input-group-right">
+												<select class="search"><option>Ожидает подтверждения</option><option>Ожидает подтверждения</option><option>Ожидает подтверждения</option></select>
+											</div>
+										</div>
+										<div class="input-group">
+											<label class="text"></label>
+											<div class="input-group-right">
+												<button class="btn btn-blue">Найти заказы</button><a href="#" class="clear-all-form">Сбросить фильтр</a>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<a href="#" class="search-opener js-search-opener">Расширенный поиск</a>
+						</div>
+						<div class="block-parts-item js-tab-block" data-item="1">
+					
+						</div>
+						<div class="block-parts-item js-tab-block" data-item="2">
+					
+						</div>
+					</div>
+					
+				</div>
+				<div class="orders">
+					<div class="order-item">
+						<div class="order-left">
+							<div class="order-numb">Заказ № 124214214</div>
+							<div class="order-date">Дата отправки заказа: 21.01.2015</div>
+							<div class="order-inf">
+								<div class="order-inf-label">Запчасть:</div>
+								<div class="order-inf-name"><a href="#">Материнская плата (5621000020)</a><br/>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</div>
+							</div>
+							<div class="order-docs">Документы:<br/>
+								<a href="#">Акт приема-передачи_20160225.docx</a><br/>
+								<a href="#">Счет_20160225.docx</a>						
+							</div>
+						</div>
+						<div class="order-right">
+							<div class="order-stat">Выполняется</div>
+							<div class="order-date-end">До конца срока аренды:<div class="big">5 дней</div></div>
+							<div class="order-date">Дата начала аренды: 21.01.2015</div>
+							<div class="order-date">Дата окончания аренды: 21.02.2015</div>
+						</div>
+						<a href="#" class="btn btn-blue">Детали заказа</a>
+					</div>
+					<div class="order-item">
+						<div class="order-left">
+							<div class="order-numb">Заказ № 124214214</div>
+							<div class="order-date">Дата отправки заказа: 21.01.2015</div>
+							<div class="order-inf">
+								<div class="order-inf-label">Запчасть:</div>
+								<div class="order-inf-name"><a href="#">Материнская плата (5621000020)</a><br/>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</div>
+							</div>
+							<div class="order-docs">Документы:<br/>
+								<a href="#">Акт приема-передачи_20160225.docx</a><br/>
+								<a href="#">Счет_20160225.docx</a>						
+							</div>
+						</div>
+						<div class="order-right">
+							<div class="order-stat">Ожидает подтверждения</div>
+							<div class="order-period">Срок аренды: 10 дней</div>
+						</div>
+						<a href="#" class="btn btn-blue">Детали заказа</a>
+					</div>
+					<div class="order-item">
+						<div class="order-left">
+							<div class="order-numb">Заказ № 124214214</div>
+							<div class="order-date">Дата отправки заказа: 21.01.2015</div>
+							<div class="order-inf">
+								<div class="order-inf-label">Запчасть:</div>
+								<div class="order-inf-name"><a href="#">Материнская плата (5621000020)</a><br/>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</div>
+							</div>
+							<div class="order-docs">Документы:<br/>
+								<a href="#">Акт приема-передачи_20160225.docx</a><br/>
+								<a href="#">Счет_20160225.docx</a>						
+							</div>
+						</div>
+						<div class="order-right">
+							<div class="order-stat">Выполняется</div>
+							<div class="order-date-end">До конца срока аренды:<div class="big">5 дней</div></div>
+							<div class="order-date">Дата начала аренды: 21.01.2015</div>
+							<div class="order-date">Дата окончания аренды: 21.02.2015</div>
+						</div>
+						<a href="#" class="btn btn-blue">Детали заказа</a>
+					</div>
+					<div class="order-item">
+						<div class="order-left">
+							<div class="order-numb">Заказ № 124214214</div>
+							<div class="order-date">Дата отправки заказа: 21.01.2015</div>
+							<div class="order-inf">
+								<div class="order-inf-label">Запчасть:</div>
+								<div class="order-inf-name"><a href="#">Материнская плата (5621000020)</a><br/>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</div>
+							</div>
+							<div class="order-docs">Документы:<br/>
+								<a href="#">Акт приема-передачи_20160225.docx</a><br/>
+								<a href="#">Счет_20160225.docx</a>						
+							</div>
+						</div>
+						<div class="order-right">
+							<div class="order-stat">Ожидает подтверждения</div>
+							<div class="order-period">Срок аренды: 10 дней</div>
+						</div>
+						<a href="#" class="btn btn-blue">Детали заказа</a>
+					</div>
+					<div class="order-item">
+						<div class="order-left">
+							<div class="order-numb">Заказ № 124214214</div>
+							<div class="order-date">Дата отправки заказа: 21.01.2015</div>
+							<div class="order-inf">
+								<div class="order-inf-label">Запчасть:</div>
+								<div class="order-inf-name"><a href="#">Материнская плата (5621000020)</a><br/>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</div>
+							</div>
+							<div class="order-docs">Документы:<br/>
+								<a href="#">Акт приема-передачи_20160225.docx</a><br/>
+								<a href="#">Счет_20160225.docx</a>						
+							</div>
+						</div>
+						<div class="order-right">
+							<div class="order-stat">Ожидает подтверждения</div>
+							<div class="order-period">Срок аренды: 10 дней</div>
+						</div>
+						<a href="#" class="btn btn-blue">Детали заказа</a>
+					</div>
+					<div class="order-item">
+						<div class="order-left">
+							<div class="order-numb">Заказ № 124214214</div>
+							<div class="order-date">Дата отправки заказа: 21.01.2015</div>
+							<div class="order-inf">
+								<div class="order-inf-label">Запчасть:</div>
+								<div class="order-inf-name"><a href="#">Материнская плата (5621000020)</a><br/>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</div>
+							</div>
+							<div class="order-docs">Документы:<br/>
+								<a href="#">Акт приема-передачи_20160225.docx</a><br/>
+								<a href="#">Счет_20160225.docx</a>						
+							</div>
+						</div>
+						<div class="order-right">
+							<div class="order-stat">Ожидает подтверждения</div>
+							<div class="order-period">Срок аренды: 10 дней</div>
+						</div>
+						<a href="#" class="btn btn-blue">Детали заказа</a>
+					</div>
+					<div class="order-item">
+						<div class="order-left">
+							<div class="order-numb">Заказ № 124214214</div>
+							<div class="order-date">Дата отправки заказа: 21.01.2015</div>
+							<div class="order-inf">
+								<div class="order-inf-label">Запчасть:</div>
+								<div class="order-inf-name"><a href="#">Материнская плата (5621000020)</a><br/>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</div>
+							</div>
+							<div class="order-docs">Документы:<br/>
+								<a href="#">Акт приема-передачи_20160225.docx</a><br/>
+								<a href="#">Счет_20160225.docx</a>						
+							</div>
+						</div>
+						<div class="order-right">
+							<div class="order-stat">Ожидает подтверждения</div>
+							<div class="order-period">Срок аренды: 10 дней</div>
+						</div>
+						<a href="#" class="btn btn-blue">Детали заказа</a>
+					</div>
+					<div class="order-item">
+						<div class="order-left">
+							<div class="order-numb">Заказ № 124214214</div>
+							<div class="order-date">Дата отправки заказа: 21.01.2015</div>
+							<div class="order-inf">
+								<div class="order-inf-label">Запчасть:</div>
+								<div class="order-inf-name"><a href="#">Материнская плата (5621000020)</a><br/>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</div>
+							</div>
+							<div class="order-docs">Документы:<br/>
+								<a href="#">Акт приема-передачи_20160225.docx</a><br/>
+								<a href="#">Счет_20160225.docx</a>						
+							</div>
+						</div>
+						<div class="order-right">
+							<div class="order-stat">Ожидает подтверждения</div>
+							<div class="order-period">Срок аренды: 10 дней</div>
+						</div>
+						<a href="#" class="btn btn-blue">Детали заказа</a>
+					</div>
+					<div class="order-item">
+						<div class="order-left">
+							<div class="order-numb">Заказ № 124214214</div>
+							<div class="order-date">Дата отправки заказа: 21.01.2015</div>
+							<div class="order-inf">
+								<div class="order-inf-label">Запчасть:</div>
+								<div class="order-inf-name"><a href="#">Материнская плата (5621000020)</a><br/>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</div>
+							</div>
+							<div class="order-docs">Документы:<br/>
+								<a href="#">Акт приема-передачи_20160225.docx</a><br/>
+								<a href="#">Счет_20160225.docx</a>						
+							</div>
+						</div>
+						<div class="order-right">
+							<div class="order-stat">Ожидает подтверждения</div>
+							<div class="order-period">Срок аренды: 10 дней</div>
+						</div>
+						<a href="#" class="btn btn-blue">Детали заказа</a>
+					</div>
+					<div class="order-item">
+						<div class="order-left">
+							<div class="order-numb">Заказ № 124214214</div>
+							<div class="order-date">Дата отправки заказа: 21.01.2015</div>
+							<div class="order-inf">
+								<div class="order-inf-label">Запчасть:</div>
+								<div class="order-inf-name"><a href="#">Материнская плата (5621000020)</a><br/>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</div>
+							</div>
+							<div class="order-docs">Документы:<br/>
+								<a href="#">Акт приема-передачи_20160225.docx</a><br/>
+								<a href="#">Счет_20160225.docx</a>						
+							</div>
+						</div>
+						<div class="order-right">
+							<div class="order-stat">Ожидает подтверждения</div>
+							<div class="order-period">Срок аренды: 10 дней</div>
+						</div>
+						<a href="#" class="btn btn-blue">Детали заказа</a>
+					</div>
+				</div>
+				<div class="block-bottom-wrapper">
+					<div class="block-numbering">
+						<ul>
+							<li class="first"><a href="#"></a></li><li><a href="#">1</a></li><li class="active"><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li><li><a href="#">...</a></li><li><a href="#">20</a></li><li class="last"><a href="#"></a></li>
+						</ul>
+					</div>
+					<div class="block-sort">
+						<p>Показать по:</p>
+						<select>
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="50">50</option>
+							<option value="100">100</option>
+						</select>
+					</div>
+				</div>
+		</div>
+
+	</div>
+
+	<footer>
+		<div class="container">
+		<div class="footer-wrapper">
+			<ul class="footer-menu">
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Обратная связь</a></li>
+			</ul>
+			<div class="footer-phone">
+				<span>Бесплатный Call-центр: <b>8 (800) 700 30 40</b></span>
+			</div>
+		</div>
+		<div class="footer-wrapper">
+			<div class="footer-copy">
+				<p>&#169; 2016 ЗАО НПП «Дельта-Системы»</p>
+				<p>Все права защищены</p>
+			</div>
+			<div class="footer-logo">
+				<a href="#">
+					Разработка сайта
+					<img src="img/footer-logo.png" alt="">
+				</a>
+			</div>
+		</div>
+		</div>
+	</footer>
+</div>
+
+
+<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="libs/jquery/jquery.formstyler.js"></script>
+<script src="libs/jquery-ui.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
