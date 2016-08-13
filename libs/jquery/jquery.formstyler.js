@@ -8,7 +8,6 @@
  * Date: 2015.09.05
  *
  */
-
 ;(function(factory) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD
@@ -1056,5 +1055,4 @@
 		}
 	}
 	onDocumentClick.registered = false;
-
 }));

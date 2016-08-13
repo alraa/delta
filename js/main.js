@@ -191,63 +191,70 @@ $( document ).ready(function() {
 			</div>\
 		');
 	});
-
-
+	
 	// Проверка полей на заполненность
-	// $(function() {
+	$(function() {
 
-	// 	$('.js-form-inspection').each(function() {
-	// 		var form = $(this),
-	// 		btn = $('.js-form-inspection-btn');
+		$('.js-form-inspection').each(function() {
+			var form = $(this),
+			btn = $('.js-form-inspection-btn');
 
-	// 		// Добавляем каждому проверяемому полю, указание что поле пустое
+			// Добавляем каждому проверяемому полю, указание что поле пустое
 
-	// 		// Функция проверки полей формы
-	// 		function checkInput(){
-	// 			form.find('.js-inspection').each(function() {
-	// 				if($(this).val() != ''){
-	// 					$(this).removeClass('error');
-	// 				} else {
-	// 					$(this).addClass('error');
-	// 				}
-	// 			});
-	// 		}
+			// Функция проверки полей формы
+			function checkInput(){
+				form.find('.js-inspection').each(function() {
+					if($(this).val() != ''){
+						$(this).removeClass('error');
+					} else {
+						$(this).addClass('error');
+					}
+				});
+			}
 
-	// 		// Функция подсветки незаполненных полей
-	// 		function lightEmpty() {
-	// 			form.find('.error').css({'border':'1px solid #c90101'});
-	// 			form.find('.error').attr('placeholder', 'Обязательное поле');
-	// 			setTimeout(function() {
-	// 				form.find('.error').removeAttr('style');
-	// 				form.find('.error').attr('placeholder', '');
-	// 			}, 5000);
-	// 		}
+			// Функция подсветки незаполненных полей
+			function lightEmpty() {
+				form.find('.error').css({'border':'1px solid #c90101'});
+				form.find('.error').attr('placeholder', 'Обязательное поле');
+				setTimeout(function() {
+					form.find('.error').removeAttr('style');
+					form.find('.error').attr('placeholder', '');
+				}, 5000);
+			}
 
-	// 		setInterval(function() {
-	// 			checkInput();
-	// 			var sizeEmpty = form.find('.error').size();
-	// 			if(sizeEmpty > 0) {
-	// 				if(btn.hasClass('disabled')){
-	// 					return false
-	// 				} else {
-	// 					btn.addClass('disabled')
-	// 				}
-	// 			} else {
-	// 				btn.removeClass('disabled')
-	// 			}
-	// 		}, 500);
+			setInterval(function() {
+				checkInput();
+				var sizeEmpty = form.find('.error').size();
+				if(sizeEmpty > 0) {
+					if(btn.hasClass('disabled')){
+						return false
+					} else {
+						btn.addClass('disabled')
+					}
+				} else {
+					btn.removeClass('disabled')
+				}
+			}, 500);
 
-	//     // Событие клика по кнопке отправить
-	// 		btn.click(function(event){
-	// 			event.preventDefault();
-	// 			if($(this).hasClass('disabled')) {
-	// 				lightEmpty();
-	// 				return false
-	// 			} else {
-	// 				form.submit();
-	// 			}
-	// 		});
-	// 	});
-	// });
-
+	    // Событие клика по кнопке отправить
+			btn.click(function(event){
+				event.preventDefault();
+				if($(this).hasClass('disabled')) {
+					lightEmpty();
+					return false
+				} else {
+					form.submit();
+				}
+			});
+		});
+	});
+	
+	//search-opener
+	$('.js-search-opener').click(function(event) {
+		event.preventDefault();
+		($('.js-search-opener').hasClass('show') ? $(this).text('Расширенный поиск') : $(this).text('Свернуть'));
+		$('.js-search-opener').toggleClass('show');
+		$('.sm-search').toggleClass('show');
+		$('.big-search').toggleClass('show');
+	});
 });
