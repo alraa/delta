@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+
+	<meta charset="UTF-8">
+	<title>Дельта-Системы</title>
+</head>
+<body>
+
+<div class="wrapper">
+	<header>
+		<div class="container">
+			<div class="header-wrapper">
+				<div class="header-menu">
+					<div class="header-menu-logo">
+						<a class="header-menu-logo-link" href="index.html"><img src="img/logo.png" alt=""></a>
+						<a href="#">личный кабинет клиента</a>
+					</div>
+					<div class="header-menu-notification">
+						<a href="#">
+							<span class="icon"></span>
+							<span class="email">user@gmail.com</span>
+						</a>
+						<span class="info">«СДМ-Банк» (ПАО)</span>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="#">Каталог аренды</a></li><li><a href="#">Каталог покупки</a></li><li><a href="#">Отложенные запчасти</a></li><li><a href="#">История заказов</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-resources">
+					<p>Доступные средства:</p>
+					<p class="resources">1 000 000 руб.</p>
+					<p class="block-resources">Заблокировано: 4 543 руб.</p>
+					<a href="#">История операций</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="main">
+
+		<div class="container">
+			<div class="container-right">
+				<div class="breadcrambs">
+					<ul>
+						<li><a href="#">Личный кабинет</a></li>
+						<li class="active"><a href="#">Каталог аренды запчастей</a></li>
+					</ul>
+				</div>
+				<div class="block-catalog">
+					<div class="block-catalog-title">
+						<h2>Каталог аренды запчастей</h2>
+					</div>
+					<div class="block-catalog-wrapper">
+						<form>
+							<div class="block-search-parts-group block-search-parts-group-select">
+								<select class="search">
+									<option value="Артикул">Артикул</option>
+									<option value="Название">Название</option>
+									<option value="Производитель">Производитель</option>
+								</select>
+								<input class="search" type="text" placeholder="Введите артикул товара">
+								<button class="search-button">Найти запчасть</button>
+							</div>
+						</form>
+						<div class="block-catalog-sort">
+							<span>Сортировать по:</span>
+							<ul>
+								<li class="active"><a>Популярности</a></li>
+								<li><a href="#">Алфавиту</a></li>
+								<li><a href="#">Стоимости аренды</a></li>
+							</ul>
+							<div class="block-sort-icon">
+								<a href="#"></a>
+								<a class="active" href="#"></a>
+							</div>
+						</div>
+						<div class="block-catalog-list">
+							<div class="block-catalog-item">
+								<div class="block-catalog-info-photo">
+									<img src="img/mat-2.png" alt="">
+								</div>
+								<div class="block-catalog-info-text">
+									<p class="block-order-article">Артикул: 5621000020</p>
+									<p class="block-order-text-title">Материнская плата</p>
+									<p class="block-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									<ul>
+										<li><p><b>Модуль:</b> СЕ</p></li>
+										<li><p><b>Применимость к моделям:</b> MX 600, MX 5600T</p></li>
+										<li><p><b>Габариты, мм:</b> 320х2х180</p></li>
+										<li><p><b>Вес, кг:</b> 32</p></li>
+									</ul>
+								</div>
+								<div class="block-catalog-button">
+									<p class="block-order-text-price-title">Стоимость аренды:</p>
+									<p class="block-order-text-price">1 000 руб/сутки</p>
+									<a href="#" class="btn btn-transparent btn--ontents">Отложить</a>
+									<a href="#" class="btn btn-blue btn--ontents">Заказать</a>
+								</div>
+							</div>
+							<div class="block-catalog-item">
+								<div class="block-catalog-info-photo">
+									<img src="img/mat-1.png" alt="">
+								</div>
+								<div class="block-catalog-info-text">
+									<p class="block-order-article">Артикул: 5621000020</p>
+									<p class="block-order-text-title">Печатная плата блока питания компьютерного модуля</p>
+									<p class="block-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									<ul>
+										<li><p><b>Модуль:</b> СЕ</p></li>
+										<li><p><b>Применимость к моделям:</b> MX 600, MX 5600T</p></li>
+										<li><p><b>Габариты, мм:</b> 320х2х180</p></li>
+										<li><p><b>Вес, кг:</b> 32</p></li>
+									</ul>
+								</div>
+								<div class="block-catalog-button">
+									<p class="block-order-text-price-title">Стоимость аренды:</p>
+									<p class="block-order-text-price">1 000 руб/сутки</p>
+									<a href="#" class="btn btn-transparent btn--ontents">Отложить</a>
+									<a href="#" class="btn btn-blue btn--ontents">Заказать</a>
+								</div>
+							</div>
+							<div class="block-catalog-item">
+								<div class="block-catalog-info-photo">
+									<img src="img/mat-2.png" alt="">
+								</div>
+								<div class="block-catalog-info-text">
+									<p class="block-order-article">Артикул: 5621000020</p>
+									<p class="block-order-text-title">Материнская плата</p>
+									<p class="block-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									<ul>
+										<li><p><b>Модуль:</b> СЕ</p></li>
+										<li><p><b>Применимость к моделям:</b> MX 600, MX 5600T</p></li>
+										<li><p><b>Габариты, мм:</b> 320х2х180</p></li>
+										<li><p><b>Вес, кг:</b> 32</p></li>
+									</ul>
+								</div>
+								<div class="block-catalog-button">
+									<p class="block-order-text-price-title">Стоимость аренды:</p>
+									<p class="block-order-text-price">1 000 руб/сутки</p>
+									<a href="#" class="btn btn-transparent btn--ontents">Отложить</a>
+									<a href="#" class="btn btn-blue btn--ontents">Заказать</a>
+								</div>
+							</div>
+							<div class="block-catalog-item">
+								<div class="block-catalog-info-photo">
+									<img src="img/mat-1.png" alt="">
+								</div>
+								<div class="block-catalog-info-text">
+									<p class="block-order-article">Артикул: 5621000020</p>
+									<p class="block-order-text-title">Материнская плата</p>
+									<p class="block-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									<ul>
+										<li><p><b>Модуль:</b> СЕ</p></li>
+										<li><p><b>Применимость к моделям:</b> MX 600, MX 5600T</p></li>
+										<li><p><b>Габариты, мм:</b> 320х2х180</p></li>
+										<li><p><b>Вес, кг:</b> 32</p></li>
+									</ul>
+								</div>
+								<div class="block-catalog-button">
+									<p class="block-order-text-price-title">Стоимость аренды:</p>
+									<p class="block-order-text-price">1 000 руб/сутки</p>
+									<a href="#" class="btn btn-transparent btn--ontents">Отложить</a>
+									<a href="#" class="btn btn-blue btn--ontents">Заказать</a>
+								</div>
+							</div>
+							<div class="block-catalog-item">
+								<div class="block-catalog-info-photo">
+									<img src="img/mat-1.png" alt="">
+								</div>
+								<div class="block-catalog-info-text">
+									<p class="block-order-article">Артикул: 5621000020</p>
+									<p class="block-order-text-title">Материнская плата</p>
+									<p class="block-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									<ul>
+										<li><p><b>Модуль:</b> СЕ</p></li>
+										<li><p><b>Применимость к моделям:</b> MX 600, MX 5600T</p></li>
+										<li><p><b>Габариты, мм:</b> 320х2х180</p></li>
+										<li><p><b>Вес, кг:</b> 32</p></li>
+									</ul>
+								</div>
+								<div class="block-catalog-button">
+									<p class="block-order-text-price-title">Стоимость аренды:</p>
+									<p class="block-order-text-price">1 000 руб/сутки</p>
+									<a href="#" class="btn btn-transparent btn--ontents">Отложить</a>
+									<a href="#" class="btn btn-blue btn--ontents">Заказать</a>
+								</div>
+							</div>
+							<div class="block-catalog-item">
+								<div class="block-catalog-info-photo">
+									<img src="img/mat-2.png" alt="">
+								</div>
+								<div class="block-catalog-info-text">
+									<p class="block-order-article">Артикул: 5621000020</p>
+									<p class="block-order-text-title">Материнская плата</p>
+									<p class="block-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									<ul>
+										<li><p><b>Модуль:</b> СЕ</p></li>
+										<li><p><b>Применимость к моделям:</b> MX 600, MX 5600T</p></li>
+										<li><p><b>Габариты, мм:</b> 320х2х180</p></li>
+										<li><p><b>Вес, кг:</b> 32</p></li>
+									</ul>
+								</div>
+								<div class="block-catalog-button">
+									<p class="block-order-text-price-title">Стоимость аренды:</p>
+									<p class="block-order-text-price">1 000 руб/сутки</p>
+									<a href="#" class="btn btn-transparent btn--ontents">Отложить</a>
+									<a href="#" class="btn btn-blue btn--ontents">Заказать</a>
+								</div>
+							</div>
+							<div class="block-catalog-item">
+								<div class="block-catalog-info-photo">
+									<img src="img/mat-1.png" alt="">
+								</div>
+								<div class="block-catalog-info-text">
+									<p class="block-order-article">Артикул: 5621000020</p>
+									<p class="block-order-text-title">Материнская плата</p>
+									<p class="block-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									<ul>
+										<li><p><b>Модуль:</b> СЕ</p></li>
+										<li><p><b>Применимость к моделям:</b> MX 600, MX 5600T</p></li>
+										<li><p><b>Габариты, мм:</b> 320х2х180</p></li>
+										<li><p><b>Вес, кг:</b> 32</p></li>
+									</ul>
+								</div>
+								<div class="block-catalog-button">
+									<p class="block-order-text-price-title">Стоимость аренды:</p>
+									<p class="block-order-text-price">1 000 руб/сутки</p>
+									<a href="#" class="btn btn-transparent btn--ontents">Отложить</a>
+									<a href="#" class="btn btn-blue btn--ontents">Заказать</a>
+								</div>
+							</div>
+							<div class="block-catalog-item">
+								<div class="block-catalog-info-photo">
+									<img src="img/mat-1.png" alt="">
+								</div>
+								<div class="block-catalog-info-text">
+									<p class="block-order-article">Артикул: 5621000020</p>
+									<p class="block-order-text-title">Материнская плата</p>
+									<p class="block-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									<ul>
+										<li><p><b>Модуль:</b> СЕ</p></li>
+										<li><p><b>Применимость к моделям:</b> MX 600, MX 5600T</p></li>
+										<li><p><b>Габариты, мм:</b> 320х2х180</p></li>
+										<li><p><b>Вес, кг:</b> 32</p></li>
+									</ul>
+								</div>
+								<div class="block-catalog-button">
+									<p class="block-order-text-price-title">Стоимость аренды:</p>
+									<p class="block-order-text-price">1 000 руб/сутки</p>
+									<a href="#" class="btn btn-transparent btn--ontents">Отложить</a>
+									<a href="#" class="btn btn-blue btn--ontents">Заказать</a>
+								</div>
+							</div>
+							<div class="block-catalog-item">
+								<div class="block-catalog-info-photo">
+									<img src="img/mat-1.png" alt="">
+								</div>
+								<div class="block-catalog-info-text">
+									<p class="block-order-article">Артикул: 5621000020</p>
+									<p class="block-order-text-title">Материнская плата</p>
+									<p class="block-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									<ul>
+										<li><p><b>Модуль:</b> СЕ</p></li>
+										<li><p><b>Применимость к моделям:</b> MX 600, MX 5600T</p></li>
+										<li><p><b>Габариты, мм:</b> 320х2х180</p></li>
+										<li><p><b>Вес, кг:</b> 32</p></li>
+									</ul>
+								</div>
+								<div class="block-catalog-button">
+									<p class="block-order-text-price-title">Стоимость аренды:</p>
+									<p class="block-order-text-price">1 000 руб/сутки</p>
+									<a href="#" class="btn btn-transparent btn--ontents">Отложить</a>
+									<a href="#" class="btn btn-blue btn--ontents">Заказать</a>
+								</div>
+							</div>
+							<div class="block-catalog-item">
+								<div class="block-catalog-info-photo">
+									<img src="img/mat-2.png" alt="">
+								</div>
+								<div class="block-catalog-info-text">
+									<p class="block-order-article">Артикул: 5621000020</p>
+									<p class="block-order-text-title">Материнская плата</p>
+									<p class="block-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									<ul>
+										<li><p><b>Модуль:</b> СЕ</p></li>
+										<li><p><b>Применимость к моделям:</b> MX 600, MX 5600T</p></li>
+										<li><p><b>Габариты, мм:</b> 320х2х180</p></li>
+										<li><p><b>Вес, кг:</b> 32</p></li>
+									</ul>
+								</div>
+								<div class="block-catalog-button">
+									<p class="block-order-text-price-title">Стоимость аренды:</p>
+									<p class="block-order-text-price">1 000 руб/сутки</p>
+									<a href="#" class="btn btn-transparent btn--ontents">Отложить</a>
+									<a href="#" class="btn btn-blue btn--ontents">Заказать</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="block-bottom-wrapper">
+					<div class="block-numbering">
+						<ul>
+							<li class="first"><a href="#"></a></li><li><a href="#">1</a></li><li class="active"><a href="#">2</a></li><li><a href="#">3</a></li><li><a href="#">4</a></li><li><a href="#">5</a></li><li><a href="#">...</a></li><li><a href="#">20</a></li><li class="last"><a href="#"></a></li>
+						</ul>
+					</div>
+					<div class="block-sort">
+						<p>Показать по:</p>
+						<select>
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="50">50</option>
+							<option value="100">100</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="container-left">
+				<a class="zapchast-link-right" href="#">Отложенные запчасти (3)</a>
+				<div class="catalog-form">
+					<p class="title">Параметры поиска запчастей</p>
+					<form>
+						<div class="catalog-form-group">
+							<a class="filter" href="#"><span>Сбросить фильтр</span></a>
+							<h4>Модель:</h4>
+							<select class="search">
+								<option value="МХ 2900">МХ 2900</option>
+								<option value="МХ 5600">МХ 5600</option>
+								<option value="МХ 5600Т">МХ 5600Т</option>
+								<option value="МХ 7600">МХ 7600</option>
+								<option value="МХ 7600Т">МХ 7600Т</option>
+								<option value="МХ 8600">МХ 8600</option>
+								</select>
+						</div>
+						<div class="catalog-form-group">
+							<h4>Модули:</h4>
+							<div class="block-checkbox-catalog js-link-yet-block">							
+								<div class="block-checkbox">
+									<input id="entrance-checkbox" type="checkbox">
+									<label for="entrance-checkbox">
+										<span>Accessory</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-2" type="checkbox">
+									<label for="entrance-checkbox-2">
+										<span>BODY</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-3" type="checkbox">
+									<label for="entrance-checkbox-3">
+										<span>CDU</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-4" type="checkbox">
+									<label for="entrance-checkbox-4">
+										<span>All Module</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-5" type="checkbox">
+									<label for="entrance-checkbox-5">
+										<span>BRM</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-6" type="checkbox">
+									<label for="entrance-checkbox-6">
+										<span>CE</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-7" type="checkbox">
+									<label for="entrance-checkbox-7">
+										<span>BNA</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-8" type="checkbox">
+									<label for="entrance-checkbox-8">
+										<span>CASSETTE</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-9" type="checkbox">
+									<label for="entrance-checkbox-9">
+										<span>Epp</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-10" type="checkbox">
+									<label for="entrance-checkbox-10">
+										<span>Accessory</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-11" type="checkbox">
+									<label for="entrance-checkbox-11">
+										<span>BODY</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-12" type="checkbox">
+									<label for="entrance-checkbox-12">
+										<span>CDU</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-13" type="checkbox">
+									<label for="entrance-checkbox-13">
+										<span>All Module</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-14" type="checkbox">
+									<label for="entrance-checkbox-14">
+										<span>BRM</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-15" type="checkbox">
+									<label for="entrance-checkbox-15">
+										<span>CE</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-16" type="checkbox">
+									<label for="entrance-checkbox-16">
+										<span>BNA</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-17" type="checkbox">
+									<label for="entrance-checkbox-17">
+										<span>CASSETTE</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-18" type="checkbox">
+									<label for="entrance-checkbox-18">
+										<span>Epp</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-19" type="checkbox">
+									<label for="entrance-checkbox-19">
+										<span>All Module</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-20" type="checkbox">
+									<label for="entrance-checkbox-20">
+										<span>Epp</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-21" type="checkbox">
+									<label for="entrance-checkbox-21">
+										<span>Accessory</span>
+									</label>
+								</div>
+									<div class="block-checkbox">
+									<input id="entrance-checkbox-22" type="checkbox">
+									<label for="entrance-checkbox-22">
+										<span>Epp</span>
+									</label>
+								</div>
+								<div class="block-checkbox">
+									<input id="entrance-checkbox-23" type="checkbox">
+									<label for="entrance-checkbox-23">
+										<span>BODY</span>
+									</label>
+								</div>
+							</div>
+							<a class="link-yet js-link-yet" href="#">Еще</a>
+						</div>
+						<div class="catalog-form-group">
+							<h4>Габариты:</h4>
+							<div class="catalog-form-group-slider">
+								<p class="title-slider">Длина</p>
+								<div class="catalog-form-group-slider-wrapper length">
+									<label for="minLength">от</label>
+									<input type="text" data-item="length" class="minCost" id="minLength" value="0"/>
+									<label for="maxLength">до</label>
+									<input type="text" data-item="length" class="maxCost" id="maxLength" value="1000"/>
+									<p class="unit">мм</p>
+									<div class="slider" data-item="length"></div>
+								</div>
+							</div>
+							<div class="catalog-form-group-slider">
+								<p class="title-slider">Ширина</p>
+								<div class="catalog-form-group-slider-wrapper width">
+									<label for="minWidth">от</label>
+									<input type="text" data-item="width" class="minCost" id="minWidth" value="0"/>
+									<label for="maxWidth">до</label>
+									<input type="text" data-item="width" class="maxCost" id="maxWidth" value="1000"/>
+									<p class="unit">мм</p>
+									<div class="slider" data-item="width"></div>
+								</div>
+							</div>
+							<div class="catalog-form-group-slider">
+								<p class="title-slider">Высота</p>
+								<div class="catalog-form-group-slider-wrapper height">
+									<label for="minHeight">от</label>
+									<input type="text" data-item="height" class="minCost" id="minHeight" value="0"/>
+									<label for="minHeight">до</label>
+									<input type="text" data-item="height" class="maxCost" id="minHeight" value="1000"/>
+									<p class="unit">мм</p>
+									<div class="slider" data-item="height"></div>
+								</div>
+							</div>
+							<div class="catalog-form-group-slider">
+								<p class="title-slider">Вес</p>
+								<div class="catalog-form-group-slider-wrapper weight">
+									<label for="minWeight">от</label>
+									<input type="text" data-item="weight" class="minCost" id="minWeight" value="0"/>
+									<label for="minWeight">до</label>
+									<input type="text" data-item="weight" class="maxCost" id="minWeight" value="1000"/>
+									<p class="unit">гр</p>
+									<div class="slider" data-item="weight"></div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<footer>
+		<div class="container">
+		<div class="footer-wrapper">
+			<ul class="footer-menu">
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Обратная связь</a></li>
+			</ul>
+			<div class="footer-phone">
+				<span>Бесплатный Call-центр: <b>8 (800) 700 30 40</b></span>
+			</div>
+		</div>
+		<div class="footer-wrapper">
+			<div class="footer-copy">
+				<p>&#169; 2016 ЗАО НПП «Дельта-Системы»</p>
+				<p>Все права защищены</p>
+			</div>
+			<div class="footer-logo">
+				<a href="#">
+					Разработка сайта
+					<img src="img/footer-logo.png" alt="">
+				</a>
+			</div>
+		</div>
+		</div>
+	</footer>
+</div>
+
+
+<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="libs/jquery/jquery.formstyler.js"></script>
+<script src="libs/jquery-ui.min.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+		// Инициализация и кастомизация ползунка выбора диапазона
+	$(".slider").slider({
+		min: 0,
+		max: 1000,
+		values: [0,1000],
+		range: true,
+		stop: function(event, ui) {
+			$('.' + itemCont + " input.minCost").val($(this).slider("values",0));
+			$('.' + itemCont + " input.maxCost").val($(this).slider("values",1));
+		},
+		slide: function(event, ui){
+			var itemCont = $(this).data('item');
+			$('.' + itemCont + " input.minCost").val($(this).slider("values",0));
+			$('.' + itemCont + " input.maxCost").val($(this).slider("values",1));
+		}
+	});
+
+	$("input.minCost").change(function() {
+		var inputminCost = $(this).data('item');
+		var value1=$('.' + inputminCost + " input.minCost").val();
+		var value2=$('.' + inputminCost + " input.maxCost").val();
+
+		if(parseInt(value1) > parseInt(value2)){
+			value1 = value2;
+			$('.' + inputminCost + " input.minCost").val(value1);
+		}
+		$('.' + inputminCost + " .slider").slider("values",0,value1);	
+	});
+
+	
+	$("input.maxCost").change(function(){
+		var inputmaxCost = $(this).data('item');
+		var value1=$('.' + inputmaxCost + " input.minCost").val();
+		var value2=$('.' + inputmaxCost + " input.maxCost").val();
+
+		if(parseInt(value1) > parseInt(value2)){
+			value2 = value1;
+			$('.' + inputmaxCost + " input.maxCost").val(value2);
+		}
+		$('.' + inputmaxCost + " .slider").slider("values",1,value2);
+	});
+</script>
+</body>
+</html>

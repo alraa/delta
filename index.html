@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+
+	<meta charset="UTF-8">
+	<title>Дельта-Системы</title>
+</head>
+<body>
+
+<div class="wrapper">
+	
+	<header>
+		<div class="container">
+			<div class="header-wrapper">
+				<div class="header-menu">
+					<div class="header-menu-logo">
+						<a class="header-menu-logo-link" href="index.html"><img src="img/logo.png" alt=""></a>
+						<a href="#">личный кабинет клиента</a>
+					</div>
+					<div class="header-menu-notification">
+						<a href="#">
+							<span class="icon"></span>
+							<span class="email">user@gmail.com</span>
+						</a>
+						<span class="info">«СДМ-Банк» (ПАО)</span>
+					</div>
+					<nav>
+						<ul>
+							<li><a href="#">Каталог аренды</a></li><li><a href="#">Каталог покупки</a></li><li><a href="#">Отложенные запчасти</a></li><li><a href="#">История заказов</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-resources">
+					<p>Доступные средства:</p>
+					<p class="resources">1 000 000 руб.</p>
+					<p class="block-resources">Заблокировано: 4 543 руб.</p>
+					<a href="#">История операций</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="main">
+		<div class="container">
+			<div class="block-notice js-block-notice">
+				<div class="block-notice-cross js-notice-cross"></div>
+				<div class="block-notice-all">
+					<a href="#">Все уведомления</a>
+				</div>
+				<div class="block-notice-item">
+					<div class="block-notice-date">
+						<span>16.02.2016</span>
+					</div>
+					<div class="block-notice-text">
+						<span>На ваш счет поступила сумма 10 000 руб.</span>
+						<a href="#">Показать историю операций</a>
+					</div>
+				</div>
+				<div class="block-notice-item">
+					<div class="block-notice-date">
+						<span>15.02.2016</span>
+					</div>
+					<div class="block-notice-text">
+						<span>Заказ №235235 завершен.</span>
+						<a href="#">Показать детали заказа</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="slider-order-deferred" class="block-slider-order">
+				<div class="block-slider-order-title">
+					<h2 class="title-bottom">Отложенные запчасти</h2>
+				</div>
+				<div class="block-search-parts">
+					<div class="block-parts-tabs">
+						<a href="#" class="active js-tab-click" data-item="0" data-name="#slider-order-deferred">Аренда (3)</a><a href="#" class="js-tab-click" data-item="1" data-name="#slider-order-deferred">Покупка (10)</a>
+					</div>
+				</div>
+				<div class="block-parts-item block-parts-item-slider js-tab-block active" data-item="0">
+					<div class="block-slider-order-list">
+						<div class="block-slider-order-item">
+							<div class="block-slider-order-photo">
+								<img src="img/mat-1.png" alt="">
+							</div>
+							<div class="block-slider-order-text">
+								<p class="block-slider-order-text-article">Артикул: 5621000020</p>
+								<p class="block-slider-order-text-title">Материнская плата</p>
+								<p class="block-slider-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+								<p class="block-slider-order-text-price-title">Стоимость аренды:</p>
+								<p class="block-slider-order-text-price">1 000 руб/сутки</p>
+							</div>
+							<div class="block-button-left">
+								<a href="#" class="btn btn-blue btn--order">Заказать</a>
+							</div>
+						</div>
+						<div class="block-slider-order-item">
+							<div class="block-slider-order-photo">
+								<img src="img/mat-2.png" alt="">
+							</div>
+							<div class="block-slider-order-text">
+								<p class="block-slider-order-text-article">Артикул: 5621000020</p>
+								<p class="block-slider-order-text-title">Материнская плата</p>
+								<p class="block-slider-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+								<p class="block-slider-order-text-price-title">Стоимость аренды:</p>
+								<p class="block-slider-order-text-price">1 000 руб/сутки</p>
+							</div>
+							<div class="block-button-left">
+								<a href="#" class="btn btn-blue btn--order">Заказать</a>
+							</div>
+						</div>
+						<div class="block-slider-order-item">
+							<div class="block-slider-order-photo">
+								<img src="img/mat-1.png" alt="">
+							</div>
+							<div class="block-slider-order-text">
+								<p class="block-slider-order-text-article">Артикул: 5621000020</p>
+								<p class="block-slider-order-text-title">Материнская плата</p>
+								<p class="block-slider-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+								<p class="block-slider-order-text-price-title">Стоимость аренды:</p>
+								<p class="block-slider-order-text-price">1 000 руб/сутки</p>
+							</div>
+							<div class="block-button-left">
+								<a href="#" class="btn btn-blue btn--order">Заказать</a>
+							</div>
+						</div>
+					</div>
+					<a class="block-slider-order-all" href="#">Все отложеные запчасти</a>
+				</div>
+				<div class="block-parts-item js-tab-block" data-item="1">234</div>
+			</div>
+
+			<div id="slider-order-search" class="block-search-list">
+				<div class="block-search-parts-title">
+					<h2 class="title-bottom">Поиск запчастей</h2>
+				</div>
+				<div class="block-search-parts">
+					<div class="block-parts-tabs">
+						<a href="#" class="active js-tab-click" data-item="0" data-name="#slider-order-search">Аренда</a><a href="#" class="js-tab-click" data-item="1" data-name="#slider-order-search">Покупка</a>
+					</div>
+					<div class="block-parts-item js-tab-block active" data-item="0">
+						<form>
+							<div class="block-search-parts-group block-search-parts-group-select">
+								<select class="search">
+									<option value="Артикул">Артикул</option>
+									<option value="Название">Название</option>
+									<option value="Производитель">Производитель</option>
+								</select>
+								<input class="search" type="text" placeholder="Введите артикул товара">
+							</div>
+							<div class="block-search-parts-group block-search-parts-group-radio">
+								<p class="title">Выберите модель:</p>
+								<input type="radio" class="search-radio" id="search-radio-1" name="group1" value="МХ 2900">
+								<label for="search-radio-1">МХ 2900</label>
+								<input type="radio" class="search-radio" id="search-radio-2" name="group1" value="МХ 5600" checked>
+								<label for="search-radio-2">МХ 5600</label>
+								<input type="radio" class="search-radio" id="search-radio-3" name="group1" value="МХ 5600Т">
+								<label for="search-radio-3">МХ 5600Т</label>
+								<input type="radio" class="search-radio" id="search-radio-4" name="group1" value="МХ 7600">
+								<label for="search-radio-4">МХ 7600</label>
+								<input type="radio" class="search-radio" id="search-radio-5" name="group1" value="МХ 7600Т">
+								<label for="search-radio-5">МХ 7600Т</label>
+								<input type="radio" class="search-radio" id="search-radio-6" name="group1" value="МХ 8600">
+								<label for="search-radio-6">МХ 8600</label>
+							</div>
+							<div class="block-search-parts-group block-search-parts-group-hidden js-block-show-all">
+								<p class="title">Выберите модули:</p>
+								<div class="block-search-parts-group-check">
+									<div class="block-checkbox">
+										<input id="entrance-checkbox" type="checkbox">
+										<label for="entrance-checkbox">
+											<span>Accessory</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-2" type="checkbox">
+										<label for="entrance-checkbox-2">
+											<span>BODY</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-3" type="checkbox">
+										<label for="entrance-checkbox-3">
+											<span>CDU</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-4" type="checkbox">
+										<label for="entrance-checkbox-4">
+											<span>All Module</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-5" type="checkbox">
+										<label for="entrance-checkbox-5">
+											<span>BRM</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-6" type="checkbox">
+										<label for="entrance-checkbox-6">
+											<span>CE</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-7" type="checkbox">
+										<label for="entrance-checkbox-7">
+											<span>BNA</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-8" type="checkbox">
+										<label for="entrance-checkbox-8">
+											<span>CASSETTE</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-9" type="checkbox">
+										<label for="entrance-checkbox-9">
+											<span>Epp</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-10" type="checkbox">
+										<label for="entrance-checkbox-10">
+											<span>Accessory</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-11" type="checkbox">
+										<label for="entrance-checkbox-11">
+											<span>BODY</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-12" type="checkbox">
+										<label for="entrance-checkbox-12">
+											<span>CDU</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-13" type="checkbox">
+										<label for="entrance-checkbox-13">
+											<span>All Module</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-14" type="checkbox">
+										<label for="entrance-checkbox-14">
+											<span>BRM</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-15" type="checkbox">
+										<label for="entrance-checkbox-15">
+											<span>CE</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-16" type="checkbox">
+										<label for="entrance-checkbox-16">
+											<span>BNA</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-17" type="checkbox">
+										<label for="entrance-checkbox-17">
+											<span>CASSETTE</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-18" type="checkbox">
+										<label for="entrance-checkbox-18">
+											<span>Epp</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-19" type="checkbox">
+										<label for="entrance-checkbox-19">
+											<span>Epp</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-20" type="checkbox">
+										<label for="entrance-checkbox-20">
+											<span>Epp</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-21" type="checkbox">
+										<label for="entrance-checkbox-21">
+											<span>Epp</span>
+										</label>
+									</div>
+										<div class="block-checkbox">
+										<input id="entrance-checkbox-22" type="checkbox">
+										<label for="entrance-checkbox-22">
+											<span>Epp</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-23" type="checkbox">
+										<label for="entrance-checkbox-23">
+											<span>Epp</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</form>
+						<div class="block-button block-button--search">
+							<a href="#" class="btn btn-blue btn-narrow js-show-all">Показать 23 запчасти</a>
+						</div>
+					</div>
+					<div class="block-parts-item js-tab-block" data-item="1">
+						<form>
+							<div class="block-search-parts-group block-search-parts-group-select">
+								<select class="search">
+									<option value="Артикул">Артикул</option>
+									<option value="Название">Название</option>
+									<option value="Производитель">Производитель</option>
+								</select>
+								<input class="search" type="text" placeholder="Введите артикул товара">
+							</div>
+							<div class="block-search-parts-group block-search-parts-group-radio">
+								<p class="title">Выберите модель:</p>
+								<input type="radio" class="search-radio" id="search-radio-7" name="group1" value="МХ 2900">
+								<label for="search-radio-7">МХ 2900</label>
+								<input type="radio" class="search-radio" id="search-radio-8" name="group1" value="МХ 5600" checked>
+								<label for="search-radio-8">МХ 5600</label>
+								<input type="radio" class="search-radio" id="search-radio-9" name="group1" value="МХ 5600Т">
+								<label for="search-radio-9">МХ 5600Т</label>
+								<input type="radio" class="search-radio" id="search-radio-10" name="group1" value="МХ 7600">
+								<label for="search-radio-10">МХ 7600</label>
+								<input type="radio" class="search-radio" id="search-radio-11" name="group1" value="МХ 7600Т">
+								<label for="search-radio-11">МХ 7600Т</label>
+								<input type="radio" class="search-radio" id="search-radio-12" name="group1" value="МХ 8600">
+								<label for="search-radio-12">МХ 8600</label>
+							</div>
+							<div class="block-search-parts-group block-search-parts-group-hidden js-block-show-all">
+								<p class="title">Выберите модули:</p>
+								<div class="block-search-parts-group-check">
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-24" type="checkbox">
+										<label for="entrance-checkbox-24">
+											<span>Accessory</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-25" type="checkbox">
+										<label for="entrance-checkbox-25">
+											<span>BODY</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-26" type="checkbox">
+										<label for="entrance-checkbox-26">
+											<span>CDU</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-27" type="checkbox">
+										<label for="entrance-checkbox-27">
+											<span>All Module</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-28" type="checkbox">
+										<label for="entrance-checkbox-28">
+											<span>BRM</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-29" type="checkbox">
+										<label for="entrance-checkbox-29">
+											<span>CE</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-30" type="checkbox">
+										<label for="entrance-checkbox-30">
+											<span>BNA</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-31" type="checkbox">
+										<label for="entrance-checkbox-31">
+											<span>CASSETTE</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-32" type="checkbox">
+										<label for="entrance-checkbox-32">
+											<span>Epp</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-33" type="checkbox">
+										<label for="entrance-checkbox-33">
+											<span>Accessory</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-34" type="checkbox">
+										<label for="entrance-checkbox-34">
+											<span>BODY</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-35" type="checkbox">
+										<label for="entrance-checkbox-35">
+											<span>CDU</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-36" type="checkbox">
+										<label for="entrance-checkbox-36">
+											<span>All Module</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-37" type="checkbox">
+										<label for="entrance-checkbox-37">
+											<span>BRM</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-38" type="checkbox">
+										<label for="entrance-checkbox-38">
+											<span>CE</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-39" type="checkbox">
+										<label for="entrance-checkbox-39">
+											<span>BNA</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-40" type="checkbox">
+										<label for="entrance-checkbox-40">
+											<span>CASSETTE</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-41" type="checkbox">
+										<label for="entrance-checkbox-41">
+											<span>Epp</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-42" type="checkbox">
+										<label for="entrance-checkbox-42">
+											<span>Epp</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-43" type="checkbox">
+										<label for="entrance-checkbox-43">
+											<span>Epp</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-44" type="checkbox">
+										<label for="entrance-checkbox-44">
+											<span>Epp</span>
+										</label>
+									</div>
+										<div class="block-checkbox">
+										<input id="entrance-checkbox-45" type="checkbox">
+										<label for="entrance-checkbox-45">
+											<span>Epp</span>
+										</label>
+									</div>
+									<div class="block-checkbox">
+										<input id="entrance-checkbox-46" type="checkbox">
+										<label for="entrance-checkbox-46">
+											<span>Epp</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</form>
+						<div class="block-button block-button--search">
+							<a href="#" class="btn btn-blue btn-narrow js-show-all">Показать 23 запчасти</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="slider-order-recently" class="block-slider-order">
+				<div class="block-slider-order-title">
+					<h2 class="title-bottom">Вы недавно заказывали</h2>
+				</div>
+				<div class="block-search-parts">
+					<div class="block-parts-tabs">
+						<a href="#" class="active js-tab-click" data-item="0" data-name="#slider-order-recently">Аренда</a><a href="#" class="js-tab-click" data-item="1" data-name="#slider-order-recently">Покупка</a>
+					</div>
+				</div>
+				<div class="block-parts-item block-parts-item-slider js-tab-block active" data-item="0">
+					<div class="block-slider-order-list">
+						<div class="block-slider-order-item">
+							<div class="block-slider-order-photo">
+								<img src="img/mat-1.png" alt="">
+							</div>
+							<div class="block-slider-order-text">
+								<p class="block-slider-order-text-article">Артикул: 5621000020</p>
+								<p class="block-slider-order-text-title">Материнская плата</p>
+								<p class="block-slider-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+								<p class="block-slider-order-text-price-title">Стоимость аренды:</p>
+								<p class="block-slider-order-text-price">1 000 руб/сутки</p>
+							</div>
+							<div class="block-button-left">
+								<a href="#" class="btn btn-transparent btn--order btn--order-transparent">Отложить</a>
+								<a href="#" class="btn btn-blue btn--order">Заказать</a>
+							</div>
+						</div>
+						<div class="block-slider-order-item">
+							<div class="block-slider-order-photo">
+								<img src="img/mat-2.png" alt="">
+							</div>
+							<div class="block-slider-order-text">
+								<p class="block-slider-order-text-article">Артикул: 5621000020</p>
+								<p class="block-slider-order-text-title">Материнская плата</p>
+								<p class="block-slider-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+								<p class="block-slider-order-text-price-title">Стоимость аренды:</p>
+								<p class="block-slider-order-text-price">1 000 руб/сутки</p>
+							</div>
+							<div class="block-button-left">
+								<a href="#" class="btn btn-transparent btn--order btn--order-transparent">Отложить</a>
+								<a href="#" class="btn btn-blue btn--order">Заказать</a>
+							</div>
+						</div>
+						<div class="block-slider-order-item">
+							<div class="block-slider-order-photo">
+								<img src="img/mat-1.png" alt="">
+							</div>
+							<div class="block-slider-order-text">
+								<p class="block-slider-order-text-article">Артикул: 5621000020</p>
+								<p class="block-slider-order-text-title">Материнская плата</p>
+								<p class="block-slider-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+								<p class="block-slider-order-text-price-title">Стоимость аренды:</p>
+								<p class="block-slider-order-text-price">1 000 руб/сутки</p>
+							</div>
+							<div class="block-button-left">
+								<a href="#" class="btn btn-transparent btn--order btn--order-transparent">Отложить</a>
+								<a href="#" class="btn btn-blue btn--order">Заказать</a>
+							</div>
+						</div>
+					</div>
+					<a class="block-slider-order-all" href="#">Все отложеные запчасти</a>
+				</div>
+				<div class="block-parts-item block-parts-item-slider js-tab-block " data-item="1">
+					<div class="block-slider-order-list">
+						<div class="block-slider-order-item">
+							<div class="block-slider-order-photo">
+								<img src="img/mat-1.png" alt="">
+							</div>
+							<div class="block-slider-order-text">
+								<p class="block-slider-order-text-article">Артикул: 5621000020</p>
+								<p class="block-slider-order-text-title">Материнская плата</p>
+								<p class="block-slider-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+								<p class="block-slider-order-text-price-title">Стоимость аренды:</p>
+								<p class="block-slider-order-text-price">1 000 руб/сутки</p>
+							</div>
+							<div class="block-button-left">
+								<a href="#" class="btn btn-transparent btn--order btn--order-transparent">Отложить</a>
+								<a href="#" class="btn btn-blue btn--order">Заказать</a>
+							</div>
+						</div>
+						<div class="block-slider-order-item">
+							<div class="block-slider-order-photo">
+								<img src="img/mat-2.png" alt="">
+							</div>
+							<div class="block-slider-order-text">
+								<p class="block-slider-order-text-article">Артикул: 5621000020</p>
+								<p class="block-slider-order-text-title">Материнская плата</p>
+								<p class="block-slider-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+								<p class="block-slider-order-text-price-title">Стоимость аренды:</p>
+								<p class="block-slider-order-text-price">1 000 руб/сутки</p>
+							</div>
+							<div class="block-button-left">
+								<a href="#" class="btn btn-transparent btn--order btn--order-transparent">Отложить</a>
+								<a href="#" class="btn btn-blue btn--order">Заказать</a>
+							</div>
+						</div>
+						<div class="block-slider-order-item">
+							<div class="block-slider-order-photo">
+								<img src="img/mat-1.png" alt="">
+							</div>
+							<div class="block-slider-order-text">
+								<p class="block-slider-order-text-article">Артикул: 5621000020</p>
+								<p class="block-slider-order-text-title">Материнская плата</p>
+								<p class="block-slider-order-text-name">PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+								<p class="block-slider-order-text-price-title">Стоимость аренды:</p>
+								<p class="block-slider-order-text-price">1 000 руб/сутки</p>
+							</div>
+							<div class="block-button-left">
+								<a href="#" class="btn btn-transparent btn--order btn--order-transparent">Отложить</a>
+								<a href="#" class="btn btn-blue btn--order">Заказать</a>
+							</div>
+						</div>
+					</div>
+					<a class="block-slider-order-all" href="#">Все отложеные запчасти</a>
+				</div>
+			</div>
+
+			<div class="block-order">
+				<div class="block-order-title">
+					<h2>Действубщие заказы аренды</h2>
+				</div>
+				<div class="block-order-list">
+					<div class="block-order-item">
+						<div class="block-order-item-wrapper">
+							<div class="block-order-item-left">
+								<p class="order-number">Заказ № 124214214</p>
+								<p class="order-date">Дата отправки заказа: 21.01.2015</p>
+								<div class="order-wrapper-part">
+									<span>Запчасть:</span>
+									<div class="order-part">
+										<a href="#">Материнская плата (5621000020)</a>
+										<p>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									</div>
+								</div>
+								<p class="order-title-document">Документы:</p>
+								<a href="#">Акт приема-передачи_20160225.docx</a>
+								<a href="#">Счет_20160225.docx</a>
+							</div>
+							<div class="block-order-item-right">
+								<p class="order-status">Выполняется</p>
+								<p class="order-status-date">До конца срока аренды:</p>
+								<p class="order-day">5 дней</p>
+								<p class="order-date">Дата начала аренды: 21.01.2015</p>
+								<p class="order-date">Дата окончания аренды: 21.02.2015</p>
+							</div>
+						</div>
+						<div class="block-button-right">
+							<a href="#" class="btn btn-blue btn--details">Детали заказа</a>
+						</div>
+					</div>
+					<div class="block-order-item">
+						<div class="block-order-item-wrapper">
+							<div class="block-order-item-left">
+								<p class="order-number">Заказ № 124214214</p>
+								<p class="order-date">Дата отправки заказа: 21.01.2015</p>
+								<div class="order-wrapper-part">
+									<span>Запчасть:</span>
+									<div class="order-part">
+										<a href="#">Материнская плата (5621000020)</a>
+										<p>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									</div>
+								</div>
+								<p class="order-title-document">Документы:</p>
+								<a href="#">Акт приема-передачи_20160225.docx</a>
+								<a href="#">Счет_20160225.docx</a>
+							</div>
+							<div class="block-order-item-right">
+								<p class="order-status">Выполняется</p>
+								<p class="order-status-date">До конца срока аренды:</p>
+								<p class="order-day">5 дней</p>
+								<p class="order-date">Дата начала аренды: 21.01.2015</p>
+								<p class="order-date">Дата окончания аренды: 21.02.2015</p>
+							</div>
+						</div>
+						<div class="block-button-right">
+							<a href="#" class="btn btn-blue btn--details">Детали заказа</a>
+						</div>
+					</div>
+					<div class="block-order-item">
+						<div class="block-order-item-wrapper">
+							<div class="block-order-item-left">
+								<p class="order-number">Заказ № 124214214</p>
+								<p class="order-date">Дата отправки заказа: 21.01.2015</p>
+								<div class="order-wrapper-part">
+									<span>Запчасть:</span>
+									<div class="order-part">
+										<a href="#">Материнская плата (5621000020)</a>
+										<p>PCBA:MULTI_SERIAL:2PORTS:PCI:4037A</p>
+									</div>
+								</div>
+								<p class="order-title-document">Документы:</p>
+								<a href="#">Акт приема-передачи_20160225.docx</a>
+								<a href="#">Счет_20160225.docx</a>
+							</div>
+							<div class="block-order-item-right">
+								<p class="order-status">Выполняется</p>
+								<p class="order-status-date">До конца срока аренды:</p>
+								<p class="order-day">5 дней</p>
+								<p class="order-date">Дата начала аренды: 21.01.2015</p>
+								<p class="order-date">Дата окончания аренды: 21.02.2015</p>
+							</div>
+						</div>
+						<div class="block-button-right">
+							<a href="#" class="btn btn-blue btn--details">Детали заказа</a>
+						</div>
+					</div>
+				</div>
+				<div class="block-button">
+					<a href="#" class="btn btn--show-all">Посмотреть все заказы</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+		<div class="footer-wrapper">
+			<ul class="footer-menu">
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Обратная связь</a></li>
+			</ul>
+			<div class="footer-phone">
+				<span>Бесплатный Call-центр: <b>8 (800) 700 30 40</b></span>
+			</div>
+		</div>
+		<div class="footer-wrapper">
+			<div class="footer-copy">
+				<p>&#169; 2016 ЗАО НПП «Дельта-Системы»</p>
+				<p>Все права защищены</p>
+			</div>
+			<div class="footer-logo">
+				<a href="#">
+					Разработка сайта
+					<img src="img/footer-logo.png" alt="">
+				</a>
+			</div>
+		</div>
+		</div>
+	</footer>
+
+</div>
+
+
+<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="libs/jquery/jquery.formstyler.js"></script>
+<script src="libs/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
